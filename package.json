@@ -1,19 +1,20 @@
 {
   "name": "guia-hoteles",
   "version": "1.0.0",
-  "description": "Mi primer proyecto de Nodejs",
+  "description": "\u000euestro Primer\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[DN\u001b[C\u001b[Duestro primer proyecto",
   "main": "index.html",
-  "scripts": {"dev": "lite-server"
-
+  "dependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "devDependencies": {},
+  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "\u001b"
+    "url": "git+https://JonathanEsponda@bitbucket.org/JonathanEsponda/guia-hoteles.git"
   },
   "author": "Jonathan Esponda",
   "license": "ISC",
-  "devDependencies": {
-    "lite-server": "^2.5.4"
-  }
+  "homepage": "https://bitbucket.org/JonathanEsponda/guia-hoteles#readme"
 }
