@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Mi primer proyecto de Nodejs",
   "main": "index.html",
-  "scripts": {"dev": "lite-server",
-  "test": "echo \"Error: no test specified\" && exit 1"
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -14,5 +15,10 @@
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.5.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
   }
 }
