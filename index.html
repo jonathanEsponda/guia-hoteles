@@ -12,6 +12,7 @@
     <title>Agencia de Viajes</title>
   </head>
   <body>
+
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <a class="navbar-brand" href="/index.html">Home</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +21,7 @@
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          
+
           <li class="nav-item"><a class="nav-link" href="/about.html">Nosotros</a></li>
           <li class="nav-item"><a class="nav-link" href="/precios.html">Precios</a></li>
           <li class="nav-item"><a class="nav-link" href="/terminos-y-condiciones.html">Terminos y condiciones</a></li>
@@ -32,61 +33,91 @@
         </form>
       </div>
     </nav>
+    <!-- Título y subtítulo -->
     <div class="jumbotron">
       <h1 class="display-4">Agencia de Viajes</h1>
       <p class="lead">Todo lo que debes saber antes de elegir el mejor hotel.</p>
       <hr class="my-4">
     </div>
-    <div class="container">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item active"><a href="./index.html">Home</a></li>
-            <li class="breadcrumb-item" aria-current="page"><a href="./about.html">Nosotros</a></li>
-            <li class="breadcrumb-item " aria-current="page"><a href="./precios.html">Precios</a></li>
-            <li class="breadcrumb-item" aria-current="page"><a href="./contacto.html">Contacto</a></li>
-        </ol>
-      </nav>
-    <div class="row">
-      <div class="col-sm">
-      <h3>Destinos</h3>  
-        <p>En esta columna veremos las ciudades que ofrece la agencia de viajes</p>
+      <!-- Breadcrumb -->
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+              <li class="breadcrumb-item active"><a href="./index.html">Home</a></li>
+              <li class="breadcrumb-item" aria-current="page"><a href="./about.html">Nosotros</a></li>
+              <li class="breadcrumb-item " aria-current="page"><a href="./precios.html">Precios</a></li>
+              <li class="breadcrumb-item" aria-current="page"><a href="./contacto.html">Contacto</a></li>
+          </ol>
+        </nav>
+      <!-- Tres columnas principales -->
+        <div class="row">
+        <div class="col-sm">
+        <h3>Destinos</h3>  
+          <p>En esta columna veremos las ciudades que ofrece la agencia de viajes</p>
+        </div>
+        <div class="col-sm">
+          <h3>Atracciones turísticas</h3>
+          <p>En esta columna veremos las atracciones turísticas que ofrece la agencia</p>
+       </div> 
+        <div class="col-sm">
+          <h3>Hoteles</h3> 
+         <p>En esta columna veremos los hoteles que ofrece la agencia</p>
+        </div>
+       </div>  
       </div>
-      
-     <div class="col-sm">
-       <h3>Atracciones turísticas</h3>
-       <p>En esta columna veremos las atracciones turísticas que ofrece la agencia</p>
-     </div> 
-     <div class="col-sm">
-      <h3>Hoteles</h3> 
-       <p>En esta columna veremos los hoteles que ofrece la agencia</p>
-     </div>
-    </div>  
-    </div>
     <hr>
-
-    <div class="d-flex flex-wrap">
-      <div class="card-hotel">
-        <h4>Paris</h4>
-        <p>Descubre todo lo que tenemos para ofrecerte en Paris</p>
-        <button class="btn btn-primary btn-reserva">Explorar</button>
+        <!-- tarjetas de hoteles -->
+    <div class="d-flex flex-wrap flex-row-reverse">
+        <!-- Tarjeta de Punta del Este -->
+      <div class="card card-hotel d-flex flex-column justify-content-between ml-2 mr-2">
+        <img class="card-img-top" src="Images/Punta del este.jpg" alt="">
+        <div class="card-body"> 
+          <h5 class="card-title">Punta del Este</h5>
+          <h6 class="card-subtitle text-muted">Maldonado</h6>
+          <p class="card-text">Descubre todo lo que tenemos para ofrecerte en Punta del Este</p>
+        </div>
+        <div>
+          <button class="btn btn-primary btn-reserva">Explorar</button>
+        </div>
       </div>
-      <div class="card-hotel">
-        <h4>Londres</h4>
-        <p>Descubre todo lo que tenemos para ofrecerte en Londres</p>
-        <button class="btn btn-primary btn-reserva">Explorar</button>
-      </div>
-      <div class="card-hotel">
-        <h4>Berlin</h4>
-        <p>Descubre todo lo que tenemos para ofrecerte en Berlin</p>
-        <button class="btn btn-primary btn-reserva">Explorar</button>
-      </div>
-      <div class="card-hotel">
-        <h4>Madrid</h4>
-        <p>Descubre todo lo que tenemos para ofrecerte en Madrid</p>
-        <button class="btn btn-primary btn-reserva">Explorar</button>
-      </div>
+        <!-- Tarjeta de Montevideo -->
+      <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+        <img class="card-img-top" src="Images/Montevideo.png" alt="">  
+        <div class="card-body">
+            <h5 class="card-title">Montevideo</h5>
+            <h6 class="card-subtitle text-muted">Montevideo</h6>
+             <p class="card-text">Descubre todo lo que tenemos para ofrecerte en Montevideo</p>
+          </div> 
+          <div>
+            <button class="btn btn-primary btn-reserva">Explorar</button>
+          </div>
+        </div>
+          <!-- Tarjeta de Colonia -->
+        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+          <img class="card-img-top" src="Images/Colonia-de-sacramento.png" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Colonia del Sacramento</h5>
+            <h6 class="card-subtitle text-muted">Colonia</h6>
+             <p class="card-text">Descubre todo lo que tenemos para ofrecerte en Colonia</p>
+          </div> 
+          <div>
+            <button class="btn btn-primary btn-reserva">Explorar</button>
+          </div>
+        </div>
+          <!-- Tarjeta de La Paloma -->
+        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+          <img class="card-img-top" src="Images/La paloma.jpg" alt="">
+          <div class="card-body">
+            <h5 class="card-title">La Paloma</h5>
+            <h6 class="card-subtitle text-muted">Rocha</h6>
+             <p class="card-text">Descubre todo lo que tenemos para ofrecerte en La Paloma</p>
+          </div> 
+          <div>
+            <button class="btn btn-primary btn-reserva">Explorar</button>
+          </div>
+        </div>
     </div>
-
+        <!-- Pie de Página-->
     <footer>
           <div class="row">
             <div class="col-sm-4 d-flex flex-column align-items-left">
