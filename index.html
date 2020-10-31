@@ -50,21 +50,40 @@
           </ol>
         </nav>
       <!-- Tres columnas principales -->
-        <div class="row">
-        <div class="col-sm">
-        <h3>Destinos</h3>  
+      <div class="row">
+         <div class="col-sm-4">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#destinos" aria-expanded="false" aria-controls="multiCollapse1">Destinos</button>
+         </div>
+         <div class="col-sm-4">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#atracciones_turisticas" aria-expanded="false" aria-controls="multiCollapse2">Atracciones turísticas</button>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#hoteles" aria-expanded="false" aria-controls="multiCollapse3">Hoteles</button>
+        </div> 
+      </div>  
+      
+      <div class="row">
+        <div class="col-sm-4 collapse multi-collapse" id="destinos">
+        <p>
+          <h3>Destinos</h3>  
           <p>En esta columna veremos las ciudades que ofrece la agencia de viajes</p>
+        </p>
         </div>
-        <div class="col-sm">
-          <h3>Atracciones turísticas</h3>
-          <p>En esta columna veremos las atracciones turísticas que ofrece la agencia</p>
-       </div> 
-        <div class="col-sm">
-          <h3>Hoteles</h3> 
-         <p>En esta columna veremos los hoteles que ofrece la agencia</p>
-        </div>
-       </div>  
-      </div>
+        
+        <div class="col-sm-4 collapse multi-collapse" id="atracciones_turisticas">
+          <p>
+            <h3>Atracciones turísticas</h3>  
+            <p>En esta columna veremos las atracciones turísticas que ofrece la agencia de viajes</p>
+          </p>
+          </div>
+          
+          <div class="col-sm-4 collapse multi-collapse" id="hoteles">
+            <p>
+              <h3>Hoteles</h3>  
+              <p>En esta columna veremos los hoteles que ofrece la agencia de viajes</p>
+            </p>
+          </div>  
+      
     <hr>
         <!-- tarjetas de hoteles -->
     <div class="d-flex flex-wrap flex-row-reverse">
@@ -117,8 +136,9 @@
           </div>
         </div>
     </div>
+  </div>
         <!-- Pie de Página-->
-    <footer>
+        <footer>
           <div class="row">
             <div class="col-sm-4 d-flex flex-column align-items-left">
                 <a href="http://www.facebook.com">Facebook</a>
