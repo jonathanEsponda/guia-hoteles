@@ -91,7 +91,7 @@
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2 mr-2">
         <img class="card-img-top" src="Images/Punta del este.jpg" alt="">
         <div class="card-body"> 
-          <h5 class="card-title">Punta del Este</h5>
+          <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de surf gratis!">Punta del Este</h5>
           <h6 class="card-subtitle text-muted">Maldonado</h6>
           <p class="card-text">Descubre todo lo que tenemos para ofrecerte en Punta del Este</p>
         </div>
@@ -130,14 +130,16 @@
             <h5 class="card-title">La Paloma</h5>
             <h6 class="card-subtitle text-muted">Rocha</h6>
              <p class="card-text">Descubre todo lo que tenemos para ofrecerte en La Paloma</p>
+             <!-- Este es el boton que llama al modal -->
              <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
-          </div> 
+          
+            </div> 
           <div>
-            <button class="btn btn-primary btn-reserva">Explorar</button>
+            <button class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones" data-content="Consulta las promociones vigentes">Explorar</button>
           </div>
         </div>
     </div>
-  
+  <!-- Estructura del modal -->
   <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -195,5 +197,11 @@
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     
+    <script>
+      $(function(){
+        $("[data-toggle='tooltip']").tooltip();
+        $("[data-toggle='popover']").popover();
+      });
+    </script>
   </body>
 </html>
