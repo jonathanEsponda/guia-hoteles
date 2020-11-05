@@ -221,34 +221,11 @@
         </div>
     </footer>
     
-    <!-- build:js dist/index.js -->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    
-    <script>
-      $(function () {
-        $("[data-toggle='tooltip']").tooltip();
-          $("[data-toggle='popover']").popover();
-          
-       });
-       $('#contacto').on('show.bs.modal', function (e) {
-            console.log('el modal se está mostrando')
-         
-        $('#contactoBtn').removeClass('btn-outline-succes');  
-        $('#contactoBtn').addClass('btn-primary');
-        $('#contactoBtn').prop('disabled', true);
-      });
-        $('#contacto').on('hidden.bs.modal', function(e){
-          console.log('el modal contacto se ocultó');
-          $('#contactoBtn').prop('disabled', false);
-        })    
-
-        $('.carousel').carousel({
-        interval:4000
-      })
-
-    </script>
+    <script src="js/index.js"></script>
     <!-- endbuild -->
   </body>
 </html>
