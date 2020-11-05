@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <!-- build:css dist/precios.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <!-- endbuild -->
     <title>Agencia de Viajes</title>
   </head>
   <body>
@@ -34,9 +36,9 @@
       <p class="lead">Todo lo que debes saber antes de elegir el mejor hotel.</p>
       <hr class="my-4">
     </div>
-    <!-- Este contenedor tiene todo el contenido de la pagina -->
+    
     <div class="container">
-      <!-- Este es el breadcrumb -->
+     
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
@@ -45,24 +47,24 @@
             <li class="breadcrumb-item" aria-current="page"><a href="./contacto.html">Contacto</a></li>
           </ol>
       </nav>
-        <!-- Tabs-->
+      
         <ul class="nav nav-tabs" id="myTab" role="tablist">
-         <!-- Tab Compara --> 
+         
           <li class="nav-item">
             <a class="nav-link active" id="compara-tab" data-toggle="tab" href="#compara" role="tab" aria-controls="compara" aria-selected="true">Compara</a>
           
           </li>
-           <!-- Tab Tarjetas --> 
+          
           <li class="nav-item">
             <a class="nav-link" id="tarjetas-tab" data-toggle="tab" href="#tarjetas" role="tab" aria-controls="tarjetas" aria-selected="false">Tarjetas</a>
           </li>
-          <!-- Tab Comentarios -->
+          
           <li class="nav-item">
             <a class="nav-link" id="comentarios-tab" data-toggle="tab" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a>
           </li>
          </ul>
     
-    <!-- Contenido de la tabla con las pestañas "Compara""Tarjetas" y "Comentarios" -->
+   
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
           <div class="table-responsive">
@@ -218,10 +220,10 @@
           </div>
         </div>
     </footer>
-    
+    <!-- build:js dist/precios.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    
+    <!-- endbuild -->
   </body>
 </html>

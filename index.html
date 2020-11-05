@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <!-- build:css dist/index.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <!-- endbuild -->
     <title>Agencia de Viajes</title>
   </head>
   <body>
@@ -33,13 +34,13 @@
         </form>
       </div>
     </nav>
-    <!-- Título y subtítulo -->
+
     <div class="jumbotron">
       <h1 class="display-4">Agencia de Viajes</h1>
       <p class="lead">Todo lo que debes saber antes de elegir el mejor hotel.</p>
       <hr class="my-4">
     </div>
-      <!-- Breadcrumb -->
+      
       <div class="container">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
@@ -49,7 +50,7 @@
               <li class="breadcrumb-item" aria-current="page"><a href="./contacto.html">Contacto</a></li>
           </ol>
         </nav>
-      <!-- Tres columnas principales -->
+      
       <div class="row">
          <div class="col-sm-4">
             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#destinos" aria-expanded="false" aria-controls="multiCollapse1">Destinos</button>
@@ -85,7 +86,7 @@
           </div>  
       
     <hr>
-<!-- Carousel -->
+
     <div id="carouselControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -101,7 +102,7 @@
           <img class="d-block" src="images/Hotel-4.jpg" alt="Cuarto slide">
         </div>
       </div>
-<!-- Botones del carousel -->
+
       <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Anterior</span>
@@ -112,9 +113,9 @@
       </a>
     </div>  
 
-        <!-- tarjetas de hoteles -->
+        
     <div class="d-flex flex-wrap flex-row-reverse">
-        <!-- Tarjeta de Punta del Este -->
+        
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2 mr-2">
         <img class="card-img-top" src="Images/Punta del este.jpg" alt="">
         <div class="card-body"> 
@@ -126,7 +127,7 @@
           <button class="btn btn-primary btn-reserva">Explorar</button>
         </div>
       </div>
-        <!-- Tarjeta de Montevideo -->
+    
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
         <img class="card-img-top" src="Images/Montevideo.png" alt="">  
         <div class="card-body">
@@ -138,7 +139,7 @@
             <button class="btn btn-primary btn-reserva">Explorar</button>
           </div>
         </div>
-          <!-- Tarjeta de Colonia -->
+          
         <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
           <img class="card-img-top" src="Images/Colonia-de-sacramento.png" alt="">
           <div class="card-body">
@@ -150,14 +151,14 @@
             <button class="btn btn-primary btn-reserva">Explorar</button>
           </div>
         </div>
-          <!-- Tarjeta de La Paloma -->
+        
         <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
           <img class="card-img-top" src="Images/La paloma.jpg" alt="">
           <div class="card-body">
             <h5 class="card-title">La Paloma</h5>
             <h6 class="card-subtitle text-muted">Rocha</h6>
              <p class="card-text">Descubre todo lo que tenemos para ofrecerte en La Paloma</p>
-             <!-- Este es el boton que llama al modal -->
+             
              <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
           
             </div> 
@@ -166,7 +167,7 @@
           </div>
         </div>
     </div>
-  <!-- Estructura del modal -->
+
   <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -195,7 +196,7 @@
     </div>
   </div>
 </div>
-       <!-- Pie de Página-->
+       
         <footer>
           <div class="row">
             <div class="col-sm-4 d-flex flex-column align-items-left">
@@ -220,8 +221,9 @@
         </div>
     </footer>
     
+    <!-- build:js dist/index.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     
     <script>
@@ -247,6 +249,7 @@
       })
 
     </script>
+    <!-- endbuild -->
   </body>
 </html>
 
